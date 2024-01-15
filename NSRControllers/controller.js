@@ -102,7 +102,7 @@ module.exports.displaySortedSRValues = async(req,res)=>{
         }
         //sortedSRValues = SRValues.values(SRValues).sort()
 
-        const sortedKeys = Object.keys(SRValues).sort((b,a) => {
+        const sortedKeys = Object.keys(SRValues).sort((a,b) => {
             return SRValues[a][0] - SRValues[b][0];
         });
         
